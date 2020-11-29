@@ -1,0 +1,11 @@
+//SECTION RESTAURANT ACCUEIL
+.section-restau {
+    background-color: $background-color;
+    margin: 20px 0 20px 0;
+    padding: 30px 20px 30px 20px;
+    &__obj{
+        background-color: $background-color-secondary;
+        border-radius: 30px;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,5 @@
+.section-restau__obj {
+    & img{
+        @include index-img;
+    }
+}
