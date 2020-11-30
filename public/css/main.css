@@ -53,7 +53,11 @@ header {
   font-size: 3em;
 }
 header i {
+  position: absolute;
+  top: 3%;
+  left: 5%;
   color: #353535;
+  font-size: 30px;
 }
 
 article {

@@ -5,6 +5,10 @@ header {
     font-family: $logo-font;
     font-size: $logo-size;
     & i {
+        position: absolute;
+        top: 3%;
+        left: 5%;
         color: $text-color-secondary;
+        font-size: 30px;
     }
 }
