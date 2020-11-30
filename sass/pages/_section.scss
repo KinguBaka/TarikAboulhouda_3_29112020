@@ -1,9 +1,34 @@
+
+//LOCALISATION
+article {
+    display: flex;
+    justify-content: center;
+    background-color: $background-color-position;
+    & p{
+        font-size: $small-size;
+        color: $text-color-secondary;
+        font-weight: $h1-weight;
+    }
+}
+
+//SECTION RESERVEZ LE MENU QUI VOUS CONVIENT
+.section-reserv {
+    background-color: $background-color;
+    @include padding-page;
+    text-align: center;
+}
+
+//SECTION FONCTIONNEMENT
+.section-fonct {
+    @include padding-page;
+}
+
 //SECTION RESTAURANT ACCUEIL
 .section-restau {
     background-color: $background-color;
     margin: 20px 0 20px 0;
-    padding: 30px 20px 30px 20px;
-    &__obj{
+    @include padding-page;
+    &__obj {
         background-color: $background-color-secondary;
         border-radius: 30px;
         margin-top: 40px;

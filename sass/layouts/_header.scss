@@ -1,0 +1,10 @@
+//HEADER MENU
+header {
+    @include padding-page($header-padding);
+    text-align: center;
+    font-family: $logo-font;
+    font-size: $logo-size;
+    & i {
+        color: $text-color-secondary;
+    }
+}

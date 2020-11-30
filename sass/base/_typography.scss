@@ -1,25 +1,30 @@
 @font-face {
     font-family: "Shrikhand";
-    src: url("../../police/Shrikhand-Regular.ttf");
+    src: url("../../../police/Shrikhand-Regular.ttf");
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url("../../police/Roboto-Regular.ttf");
+    src: url("../../../police/Roboto-Regular.ttf");
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-size: 1em;
+    font-family: "Roboto";
     color: $text-color;
 }
 
 h1 {
     font-size: $h1-size;
+    font-weight: $h1-weight;
+}
+
+h2 {
+    font-weight: $h1-weight;
 }
 
 p {
     font-size: $normal-size;
+    color: $text-color-secondary;
 }
 
 a {

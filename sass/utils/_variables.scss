@@ -3,14 +3,23 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $text-color: black;
-$background-color: #F2F2F2;
+$text-color-secondary: #353535;
+$background-color: #F6F6F6;
 $background-color-secondary: white;
+$background-color-position: #EAEAEA;
+$background-color-footer: #353535;
 
 // Fonts
 $logo-font: "Shrikhand";
 $text-font: "Roboto";
+$logo-size: 3em;
 $h1-size: 2em;
+$h1-weight: 900;
 $normal-size: 1.5em;
+$small-size: 1.25em;
+
 
 // Margin & Padding
-$page-padding: 10px;
+$header-padding: 10px 20px 10px 20px;
+$page-padding: 30px 20px 30px 20px;
+$icone-padding: 20px;
