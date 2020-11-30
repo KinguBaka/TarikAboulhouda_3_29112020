@@ -91,3 +91,16 @@ article p {
   border-radius: 30px;
   margin-top: 40px;
 }
+.section-restau__obj i {
+  float: right;
+  margin: 0 30px 0 0;
+  font-size: 2em;
+}
+.section-restau__obj__heading {
+  padding: 0px 20px 0px 20px;
+  margin: 10px 0 5px 0;
+}
+.section-restau__obj__byline {
+  padding: 0px 20px 20px 20px;
+  margin: 5px 0 10px 0;
+}

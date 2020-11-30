@@ -9,3 +9,9 @@
 @mixin padding-page($padding: $page-padding) {
     padding: $padding;
 }
+
+@mixin section-restau-i {
+    float: right;
+    margin: $restau-icone-margin;
+    font-size: $h1-size;
+}

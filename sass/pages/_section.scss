@@ -32,5 +32,16 @@ article {
         background-color: $background-color-secondary;
         border-radius: 30px;
         margin-top: 40px;
+        & i{
+            @include section-restau-i;
+        }
+        &__heading {
+            padding: $restau-heading-padding;
+            margin: $restau-heading-margin;
+        }
+        &__byline {
+            padding: $restau-byline-padding;
+            margin: $restau-byline-margin;
+        }
     }
 }
