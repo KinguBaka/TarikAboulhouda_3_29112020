@@ -13,4 +13,8 @@
 @mixin section-restau-i {
     margin: $restau-icone-margin;
     font-size: $h1-size;
+    &:hover {
+        font-weight: bold;
+        color: $primary-color;
+    }
 }

@@ -1,0 +1,22 @@
+.footer {
+    @include padding-page($footer-padding);
+    background-color: $background-color-footer;
+    color: $text-footer-color;
+    & h2 {
+        font-family: $logo-font;
+        font-weight: 100;
+    }
+    &__lien {
+        display: flex;
+        flex-direction: column;
+        color: $text-footer-color;
+        & a{
+            color: $text-footer-color;
+            font-size: $small-size;
+            margin: $footer-a-padding;
+        }
+        & i{
+            
+        }
+    }
+}

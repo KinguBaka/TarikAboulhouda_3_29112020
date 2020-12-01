@@ -4,10 +4,12 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $text-color: black;
 $text-color-secondary: #353535;
+$text-footer-color: white;
 $background-color: #F6F6F6;
 $background-color-secondary: white;
 $background-color-position: #EAEAEA;
 $background-color-footer: #353535;
+
 
 // Fonts
 $logo-font: "Shrikhand";
@@ -21,8 +23,11 @@ $small-size: 1.25em;
 
 // Margin & Padding
 $header-padding: 10px 20px 10px 20px;
+$footer-padding: 30px 20px 30px 20px;
+$footer-a-padding: 5px 0 5px 0;
 $page-padding: 30px 20px 30px 20px;
 $icone-padding: 20px;
+$restau-padding: 80px 20px 80px 20px;
 $restau-heading-padding: 0px 20px 0px 20px;
 $restau-byline-padding: 0px 20px 20px 20px;
 $restau-heading-margin: 10px 0 5px 0;
