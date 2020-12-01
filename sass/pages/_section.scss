@@ -28,6 +28,13 @@ article {
     background-color: $background-color;
     margin: 20px 0 20px 0;
     @include padding-page;
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+    }
     &__obj {
         background-color: $background-color-secondary;
         border-radius: 30px;
