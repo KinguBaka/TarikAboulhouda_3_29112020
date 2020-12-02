@@ -23,8 +23,16 @@ article {
     @include padding-page($fonct-padding);
     &__obj {
         @include fonct-obj;
+        box-shadow: $box-shadow;
         & i{
             opacity: 0.5;
+        }
+        &__purple {
+            background-color: $fonct-obj-purple;
+            & i{
+                color: $primary-color;
+                opacity: 1;
+            }
         }
         &__nbr {
             @include fonct-nbr;
@@ -46,6 +54,7 @@ article {
         background-color: $background-color-secondary;
         border-radius: 30px;
         margin-top: 40px;
+        box-shadow: $box-shadow;
         & i{
             @include section-restau-i;
         }

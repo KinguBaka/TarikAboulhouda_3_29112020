@@ -31,12 +31,29 @@ p {
   color: #353535;
 }
 
+button {
+  font-family: "Roboto";
+  font-size: 1.25em;
+  color: white;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
 a:visited {
   text-decoration: none;
+}
+
+button {
+  padding: 20px 20px;
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  box-shadow: 5px 5px 10px lightgrey;
+}
+button:hover {
+  box-shadow: 10px 10px 15px lightgrey;
 }
 
 .section-restau__obj img {
@@ -52,10 +69,13 @@ header {
   text-align: center;
   font-family: "Shrikhand";
   font-size: 3em;
+  box-shadow: 5px 5px 10px lightgrey;
+  position: relative;
+  z-index: 1;
 }
 header i {
   position: absolute;
-  top: 3%;
+  top: 35%;
   left: 5%;
   color: #353535;
   font-size: 30px;
@@ -106,9 +126,17 @@ article p {
   color: black;
   background-color: #F6F6F6;
   border-radius: 30px;
+  box-shadow: 5px 5px 10px lightgrey;
 }
 .section-fonct__obj i {
   opacity: 0.5;
+}
+.section-fonct__obj__purple {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+.section-fonct__obj__purple i {
+  color: #9356DC;
+  opacity: 1;
 }
 .section-fonct__obj__nbr {
   margin: 0px 0 0 -45px;
@@ -134,6 +162,7 @@ article p {
   background-color: white;
   border-radius: 30px;
   margin-top: 40px;
+  box-shadow: 5px 5px 10px lightgrey;
 }
 .section-restau__obj i {
   margin: 0 30px 0 0;

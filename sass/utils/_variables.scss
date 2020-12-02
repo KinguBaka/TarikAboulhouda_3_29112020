@@ -10,7 +10,11 @@ $background-color-secondary: white;
 $background-color-position: #EAEAEA;
 $background-color-footer: #353535;
 $fonct-nbr-color : white;
+$fonct-obj-purple: rgba(147,86,220,0.1);
 
+//shadow
+$box-shadow: 5px 5px 10px lightgrey;
+$box-shadow-hover: 10px 10px 15px lightgrey;
 
 // Fonts
 $logo-font: "Shrikhand";
@@ -28,6 +32,7 @@ $footer-padding: 30px 20px 30px 20px;
 $footer-a-padding: 5px 0 5px 0;
 $page-padding: 30px 20px 30px 20px;
 $icone-padding: 20px;
+$button-padding: 20px 20px;
 $restau-padding: 80px 20px 80px 20px;
 $restau-heading-padding: 0px 20px 0px 20px;
 $restau-byline-padding: 0px 20px 20px 20px;
