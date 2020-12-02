@@ -56,14 +56,6 @@ button:hover {
   box-shadow: 10px 10px 15px lightgrey;
 }
 
-.section-restau__obj img {
-  object-fit: cover;
-  object-position: 50% 95%;
-  height: 280px;
-  width: 100%;
-  border-radius: 30px 30px 0 0;
-}
-
 header {
   padding: 10px 20px 10px 20px;
   text-align: center;
@@ -71,7 +63,6 @@ header {
   font-size: 3em;
   box-shadow: 5px 5px 10px lightgrey;
   position: relative;
-  z-index: 1;
 }
 header i {
   position: absolute;
@@ -164,13 +155,20 @@ article p {
   margin-top: 40px;
   box-shadow: 5px 5px 10px lightgrey;
 }
+.section-restau__obj img {
+  object-fit: cover;
+  object-position: 50% 95%;
+  height: 280px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
 .section-restau__obj i {
   margin: 0 30px 0 0;
   font-size: 2em;
 }
 .section-restau__obj i:hover {
   font-weight: bold;
-  color: #9356DC;
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 .section-restau__obj__heading {
   padding: 0px 20px 0px 20px;
@@ -179,4 +177,16 @@ article p {
 .section-restau__obj__byline {
   padding: 0px 20px 20px 20px;
   margin: 5px 0 10px 0;
+}
+
+.menu {
+  padding: 80px 20px 80px 20px;
+  background-color: #F6F6F6;
+  border-radius: 50px 50px 0 0;
+}
+.menu__img img {
+  object-fit: cover;
+  object-position: 50% 95%;
+  height: 350px;
+  width: 100%;
 }

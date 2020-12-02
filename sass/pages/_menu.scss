@@ -1,0 +1,8 @@
+.menu {
+    padding: $restau-padding;
+    background-color: $background-color;
+    border-radius: 50px 50px 0 0;
+    &__img img{
+        @include menu-img;
+    }
+}

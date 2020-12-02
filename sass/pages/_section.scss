@@ -55,6 +55,9 @@ article {
         border-radius: 30px;
         margin-top: 40px;
         box-shadow: $box-shadow;
+        & img{
+            @include index-img;
+        }
         & i{
             @include section-restau-i;
         }
