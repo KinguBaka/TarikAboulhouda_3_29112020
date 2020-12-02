@@ -18,3 +18,21 @@
         color: $primary-color;
     }
 }
+
+@mixin fonct-obj($background: $background-color) {
+    padding: $fonct-obj-padding;
+    margin: $fonct-obj-margin;
+    color: $text-color;
+    background-color: $background;
+    border-radius: 30px;
+}
+
+@mixin fonct-nbr {
+    margin: 0px 0 0 -45px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    color: $fonct-nbr-color;
+    background-color: $primary-color;
+    font-weight: 100;
+    float: left;
+}

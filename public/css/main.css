@@ -98,7 +98,26 @@ article p {
 }
 
 .section-fonct {
-  padding: 30px 20px 30px 20px;
+  padding: 50px 20px 50px 20px;
+}
+.section-fonct__obj {
+  padding: 15px 30px 15px 30px;
+  margin: 20px 0px 20px 20px;
+  color: black;
+  background-color: #F6F6F6;
+  border-radius: 30px;
+}
+.section-fonct__obj i {
+  opacity: 0.5;
+}
+.section-fonct__obj__nbr {
+  margin: 0px 0 0 -45px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+  font-weight: 100;
+  float: left;
 }
 
 .section-restau {

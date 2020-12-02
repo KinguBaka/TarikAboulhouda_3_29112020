@@ -20,7 +20,16 @@ article {
 
 //SECTION FONCTIONNEMENT
 .section-fonct {
-    @include padding-page;
+    @include padding-page($fonct-padding);
+    &__obj {
+        @include fonct-obj;
+        & i{
+            opacity: 0.5;
+        }
+        &__nbr {
+            @include fonct-nbr;
+        }
+    }
 }
 
 //SECTION RESTAURANT ACCUEIL
