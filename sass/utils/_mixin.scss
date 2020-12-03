@@ -3,7 +3,7 @@
     object-position: 50% 95%;
     height: 280px;
     width: 100%;
-    border-radius: 30px 30px 0 0 ;
+    border-radius: 15px 15px 0 0 ;
 }
 
 @mixin menu-img {
@@ -21,7 +21,6 @@
     box-shadow: $box-shadow;
     &:hover {
         box-shadow: $box-shadow-hover;
-        
     }
 }
 
@@ -29,13 +28,25 @@
     padding: $padding;
 }
 
-@mixin section-restau-i {
+@mixin titre-border-bottom {
+    border-bottom: 4px solid $tertiary-color;
+    width: 50px;
+}
+
+@mixin section-restau-i($size: $h1-size) {
     margin: $restau-icone-margin;
-    font-size: $h1-size;
+    font-size: $size;
     &:hover {
         font-weight: bold;
         background: linear-gradient($primary-color, $secondary-color);
     }
+}
+
+@mixin section-restau-obj {
+    background-color: $background-color-secondary;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: $box-shadow;
 }
 
 @mixin fonct-obj($background: $background-color) {

@@ -2,7 +2,71 @@
     padding: $restau-padding;
     background-color: $background-color;
     border-radius: 50px 50px 0 0;
+    &__button {
+        text-align: center;
+        margin: $menu-button-margin;
+        & button{
+            padding: $menu-button-padding;
+        }
+    }
+    & h3{
+        font-size: $normal-size;
+        text-transform: uppercase;
+        @include titre-border-bottom;
+    }
     &__img img{
         @include menu-img;
     }
+    &__title {
+        font-family: $logo-font;
+        & i{
+            float: right;
+            @include section-restau-i($small-size);
+        }
+    }
+    &__plats {
+        padding: $menu-padding;
+        &-prix{
+            float: right;
+        }
+        & p {
+            @include section-restau-obj;
+            padding: $menu-text-padding;
+            font-size: 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            & strong{
+                font-size: $normal-size;
+            }
+        }
+        &-prix{
+            font-size: $small-size;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+    }
+}
+
+.check {
+    background-color: $tertiary-color;
+    color: white;
+    position: relative;
+    float: right;
+    text-align: center;
+    font-size: $normal-size;
+    border-radius: 0 15px 15px 0;
+    bottom: 95px;
+    width: 80px;
+    height: 80px;
+    margin-right: -100px;
+    & i {
+        margin-top: 30px;
+    }
+}
+
+.plats {
+    &:hover + .check i{
+        animation: spin 0.5s linear;
+   }
 }

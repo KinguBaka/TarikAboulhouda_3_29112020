@@ -51,10 +51,7 @@ article {
         align-items: center;
     }
     &__obj {
-        background-color: $background-color-secondary;
-        border-radius: 30px;
-        margin-top: 40px;
-        box-shadow: $box-shadow;
+        @include section-restau-obj;
         & img{
             @include index-img;
         }
