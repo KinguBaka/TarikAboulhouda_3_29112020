@@ -56,6 +56,12 @@
 
 .plats {
     @include section-restau-obj;
+    animation: menu-appear 1.5s ease-in-out backwards;
+    @for $i from 1 through 3 {
+        &-#{$i} {
+            animation-delay: 0.5s * $i;
+        }
+    }
     &:hover .check {
         margin: 0px;
         & i {

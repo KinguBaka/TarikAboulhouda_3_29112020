@@ -6,6 +6,16 @@
     transform: rotate(360deg);
   }
 }
+@keyframes menu-appear {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -279,6 +289,16 @@ article p {
   margin-top: 20px;
   box-shadow: 5px 5px 10px lightgrey;
   overflow: hidden;
+  animation: menu-appear 1.5s ease-in-out backwards;
+}
+.plats-1 {
+  animation-delay: 0.5s;
+}
+.plats-2 {
+  animation-delay: 1s;
+}
+.plats-3 {
+  animation-delay: 1.5s;
 }
 .plats:hover .check {
   margin: 0px;
