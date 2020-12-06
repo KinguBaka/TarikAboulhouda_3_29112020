@@ -48,6 +48,7 @@
     border-radius: 15px;
     margin-top: 20px;
     box-shadow: $box-shadow;
+    overflow: hidden;
 }
 
 @mixin menu-check {
