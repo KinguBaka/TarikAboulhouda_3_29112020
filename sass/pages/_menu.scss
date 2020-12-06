@@ -30,7 +30,6 @@
             float: right;
         }
         & p {
-            @include section-restau-obj;
             padding: $menu-text-padding;
             font-size: 15px;
             text-overflow: ellipsis;
@@ -49,24 +48,16 @@
 }
 
 .check {
-    background-color: $tertiary-color;
-    color: white;
-    position: relative;
-    float: right;
-    text-align: center;
-    font-size: $normal-size;
-    border-radius: 0 15px 15px 0;
-    bottom: 95px;
-    width: 80px;
-    height: 80px;
-    margin-right: -100px;
-    & i {
-        margin-top: 30px;
-    }
+    @include menu-check;
 }
 
 .plats {
-    &:hover + .check i{
+    @include section-restau-obj;
+    &:hover .check i{
         animation: spin 0.5s linear;
+   }
+   &:hover .check {
+        display: inline;
+        animation: appear 0.5s linear forwards;
    }
 }

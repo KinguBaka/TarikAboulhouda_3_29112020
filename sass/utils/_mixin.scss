@@ -11,6 +11,7 @@
     object-position: 50% 95%;
     height: 350px;
     width: 100%;
+    position: relative;
 }
 
 @mixin button {
@@ -47,6 +48,23 @@
     border-radius: 15px;
     margin-top: 20px;
     box-shadow: $box-shadow;
+}
+
+@mixin menu-check {
+    display: none;
+    background-color: $tertiary-color;
+    color: white;
+    float: right;
+    position: relative;
+    text-align: center;
+    font-size: $normal-size;
+    border-radius: 0 15px 15px 0;
+    width: 80px;
+    height: 80px;
+    margin-right: -80px;
+    & i {
+        margin-top: 30px;
+    }
 }
 
 @mixin fonct-obj($background: $background-color) {

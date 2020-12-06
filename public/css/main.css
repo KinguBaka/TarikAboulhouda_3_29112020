@@ -6,6 +6,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes appear {
+  0% {
+    margin-right: -80px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -214,6 +222,7 @@ article p {
   object-position: 50% 95%;
   height: 350px;
   width: 100%;
+  position: relative;
 }
 .menu__title {
   font-family: "Shrikhand";
@@ -234,10 +243,6 @@ article p {
   float: right;
 }
 .menu__plats p {
-  background-color: white;
-  border-radius: 15px;
-  margin-top: 20px;
-  box-shadow: 5px 5px 10px lightgrey;
   padding: 15px;
   font-size: 15px;
   text-overflow: ellipsis;
@@ -254,22 +259,32 @@ article p {
 }
 
 .check {
+  display: none;
   background-color: #99E2D0;
   color: white;
-  position: relative;
   float: right;
+  position: relative;
   text-align: center;
   font-size: 1.5em;
   border-radius: 0 15px 15px 0;
-  bottom: 95px;
   width: 80px;
   height: 80px;
-  margin-right: -100px;
+  margin-right: -80px;
 }
 .check i {
   margin-top: 30px;
 }
 
-.plats:hover + .check i {
+.plats {
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px lightgrey;
+}
+.plats:hover .check i {
   animation: spin 0.5s linear;
+}
+.plats:hover .check {
+  display: inline;
+  animation: appear 0.5s linear forwards;
 }
