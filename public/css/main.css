@@ -262,17 +262,16 @@ article p {
 }
 
 .check {
-  display: none;
   background-color: #99E2D0;
   color: white;
   float: right;
   position: relative;
   text-align: center;
   font-size: 1.5em;
-  border-radius: 0 15px 15px 0;
   width: 80px;
   height: 80px;
   margin-right: -80px;
+  transition: margin linear 0.5s;
 }
 .check i {
   margin-top: 30px;
@@ -285,10 +284,9 @@ article p {
   box-shadow: 5px 5px 10px lightgrey;
   overflow: hidden;
 }
+.plats:hover .check {
+  margin: 0px;
+}
 .plats:hover .check i {
   animation: spin 0.5s linear;
-}
-.plats:hover .check {
-  display: inline;
-  animation: appear 0.5s linear forwards;
 }

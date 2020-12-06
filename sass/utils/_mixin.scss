@@ -52,14 +52,12 @@
 }
 
 @mixin menu-check {
-    display: none;
     background-color: $tertiary-color;
     color: white;
     float: right;
     position: relative;
     text-align: center;
     font-size: $normal-size;
-    border-radius: 0 15px 15px 0;
     width: 80px;
     height: 80px;
     margin-right: -80px;

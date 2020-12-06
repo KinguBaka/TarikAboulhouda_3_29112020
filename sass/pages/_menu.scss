@@ -51,15 +51,15 @@
 
 .check {
     @include menu-check;
+    transition: margin linear 0.5s;
 }
 
 .plats {
     @include section-restau-obj;
-    &:hover .check i{
-        animation: spin 0.5s linear;
-   }
-   &:hover .check {
-        display: inline;
-        animation: appear 0.5s linear forwards;
+    &:hover .check {
+        margin: 0px;
+        & i {
+            animation: spin 0.5s linear;
+        }
    }
 }
