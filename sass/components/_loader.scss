@@ -1,6 +1,6 @@
 .loader {
     @include loader-back;
-    //animation: loader-appear 2.5s forwards;
+    animation: loader-appear 2.5s forwards;
     &-anim {
         @include loader-grp-icone;
         &-i {
