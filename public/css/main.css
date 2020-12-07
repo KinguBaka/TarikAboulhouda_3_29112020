@@ -56,7 +56,6 @@ p {
 button {
   font-family: "Roboto";
   font-size: 1.25em;
-  color: white;
 }
 
 a {
@@ -68,14 +67,18 @@ a:visited {
 }
 
 button {
+  color: white;
   padding: 20px 20px;
   border-radius: 50px;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   box-shadow: 5px 5px 10px lightgrey;
+  transition: opacity 1s;
+  transition: box-shadow 1s;
 }
 button:hover {
-  box-shadow: 10px 10px 15px lightgrey;
+  box-shadow: 10px 10px 15px grey;
+  opacity: 0.7;
 }
 
 header {
