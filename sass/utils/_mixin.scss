@@ -89,3 +89,31 @@
     font-weight: 100;
     float: left;
 }
+
+@mixin loader-back {
+    cursor: wait;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin loader-grp-icone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin loader-icone {
+    font-size: 3em;    
+    background: linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px;
+}
