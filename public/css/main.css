@@ -114,6 +114,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: loader-appear 2.5s forwards;
 }
 .loader-anim {
   display: flex;
