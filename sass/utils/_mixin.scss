@@ -1,18 +1,3 @@
-@mixin index-img {
-    object-fit: cover;
-    object-position: 50% 95%;
-    height: 250px;
-    width: 100%;
-    border-radius: 15px 15px 0 0 ;
-}
-
-@mixin menu-img {
-    object-fit: cover;
-    object-position: 50% 95%;
-    height: 350px;
-    width: 100%;
-    position: relative;
-}
 
 @mixin button {
     color: $fonct-nbr-color;
@@ -33,11 +18,6 @@
     padding: $padding;
 }
 
-@mixin titre-border-bottom {
-    border-bottom: 4px solid $tertiary-color;
-    width: 50px;
-}
-
 @mixin section-restau-i($size: $h1-size) {
     margin: $restau-icone-margin;
     font-size: $size;
@@ -55,39 +35,6 @@
     margin-top: 20px;
     box-shadow: $box-shadow;
     overflow: hidden;
-}
-
-@mixin menu-check {
-    background-color: $tertiary-color;
-    color: white;
-    float: right;
-    position: relative;
-    text-align: center;
-    font-size: $normal-size;
-    width: 80px;
-    height: 80px;
-    margin-right: -80px;
-    & i {
-        margin-top: 30px;
-    }
-}
-
-@mixin fonct-obj($background: $background-color) {
-    padding: $fonct-obj-padding;
-    margin: $fonct-obj-margin;
-    color: $text-color;
-    background-color: $background;
-    border-radius: 30px;
-}
-
-@mixin fonct-nbr {
-    margin: 0px 0 0 -45px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 50%;
-    color: $fonct-nbr-color;
-    background-color: $primary-color;
-    font-weight: 100;
-    float: left;
 }
 
 @mixin loader-back {

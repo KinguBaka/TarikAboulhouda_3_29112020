@@ -22,7 +22,11 @@ article {
 .section-fonct {
     @include padding-page($fonct-padding);
     &__obj {
-        @include fonct-obj;
+        padding: $fonct-obj-padding;
+        margin: $fonct-obj-margin;
+        color: $text-color;
+        background-color: $background-color;
+        border-radius: 30px;
         box-shadow: $box-shadow;
         & i{
             opacity: 0.5;
@@ -35,7 +39,13 @@ article {
             }
         }
         &__nbr {
-            @include fonct-nbr;
+            margin: 0px 0 0 -45px;
+            padding: 5px 10px 5px 10px;
+            border-radius: 50%;
+            color: $fonct-nbr-color;
+            background-color: $primary-color;
+            font-weight: 100;
+            float: left;
         }
     }
     @media (min-width: 800px) {
@@ -63,7 +73,11 @@ article {
     &__obj {
         @include section-restau-obj;
         & img{
-            @include index-img;
+            object-fit: cover;
+            object-position: 50% 95%;
+            height: 250px;
+            width: 100%;
+            border-radius: 15px 15px 0 0 ;
         }
         & i{
             @include section-restau-i;

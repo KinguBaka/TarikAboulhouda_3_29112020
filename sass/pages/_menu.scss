@@ -14,10 +14,15 @@
     & h3{
         font-size: $normal-size;
         text-transform: uppercase;
-        @include titre-border-bottom;
+        border-bottom: 4px solid $tertiary-color;
+        width: 50px;
     }
     &__img img{
-        @include menu-img;
+        object-fit: cover;
+        object-position: 50% 95%;
+        height: 350px;
+        width: 100%;
+        position: relative;
     }
     &__title {
         font-family: $logo-font;
@@ -62,7 +67,18 @@
 }
 
 .check {
-    @include menu-check;
+    background-color: $tertiary-color;
+    color: white;
+    float: right;
+    position: relative;
+    text-align: center;
+    font-size: $normal-size;
+    width: 80px;
+    height: 80px;
+    margin-right: -80px;
+    & i {
+        margin-top: 30px;
+    }
     transition: margin linear 0.5s;
 }
 
