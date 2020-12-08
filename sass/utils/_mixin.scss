@@ -22,10 +22,13 @@
     margin: $restau-icone-margin;
     font-size: $size;
     &:hover {
-        font-weight: bold;
-        background: linear-gradient($primary-color, $secondary-color);
+        background: black;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    &:hover + .hidden {
+        display: inline-block;
+        transform:  scale(1.11);
     }
 }
 
