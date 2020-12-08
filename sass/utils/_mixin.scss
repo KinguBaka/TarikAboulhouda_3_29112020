@@ -117,3 +117,14 @@
     -webkit-text-fill-color: transparent;
     padding: 20px;
 }
+
+@mixin new {
+    background-color: $new-background;
+    color: $new-color;
+    border-radius: 10px;
+    right: 0%;
+    position: absolute;
+    margin: 10px 30px;
+    padding: 15px;
+    font-weight: 800;
+}
