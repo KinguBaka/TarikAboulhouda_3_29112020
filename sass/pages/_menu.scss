@@ -47,6 +47,12 @@
             white-space: nowrap;
         }
     }
+    @media (min-width: 800px) {
+        &__img img {
+            height: 700px;
+            object-position: 50% 80%;
+        }
+    }
 }
 
 .check {
@@ -67,5 +73,5 @@
         & i {
             animation: spin 0.5s linear;
         }
-   }
+    }
 }

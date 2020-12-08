@@ -38,6 +38,16 @@ article {
             @include fonct-nbr;
         }
     }
+    @media (min-width: 800px) {
+        text-align: center;           
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__obj {
+            width: 300px;
+        }
+    }
 }
 
 //SECTION RESTAURANT ACCUEIL
@@ -65,6 +75,15 @@ article {
         &__byline {
             padding: $restau-byline-padding;
             margin: $restau-byline-margin;
+        }
+    }
+    @media (min-width: 800px) {
+        h1 {
+            text-align: center;
+        }
+        &__obj img{
+            height: 600px;
+            object-position: 50% 80%;
         }
     }
 }
